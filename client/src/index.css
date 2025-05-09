@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light theme (default) */
+:root {
+  --background: 0 0% 98%;
+  --foreground: 222 47% 11%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --primary: 244 82% 60%;  /* #6366F1 (indigo) */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 329 86% 70%; /* #EC4899 (pink) */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 271 81% 56%; /* #8B5CF6 (purple) */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+  --success: 158 64% 52%; /* #34D399 (green) */
+  --success-foreground: 0 0% 100%;
+  --ring: 244 82% 60%;
+  --radius: 0.5rem;
+}
+
+/* Dark theme */
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 210 40% 98%;
+  --muted: 223 47% 11%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+  --popover: 224 71% 4%;
+  --popover-foreground: 210 40% 98%;
+  --card: 224 71% 4%;
+  --card-foreground: 210 40% 98%;
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --primary: 244 82% 60%;  /* #6366F1 (indigo) */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 329 86% 70%; /* #EC4899 (pink) */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 271 81% 56%; /* #8B5CF6 (purple) */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+  --success: 158 64% 52%; /* #34D399 (green) */
+  --success-foreground: 0 0% 100%;
+  --ring: 244 82% 60%;
+  --radius: 0.5rem;
+}
+
+/* Purple theme */
+.purple {
+  /* Base */
+  --background: 260 50% 98%;
+  --foreground: 270 50% 10%;
+  --muted: 265 30% 90%;
+  --muted-foreground: 270 40% 40%;
+  --popover: 260 50% 100%;
+  --popover-foreground: 270 50% 10%;
+  --card: 260 50% 100%;
+  --card-foreground: 270 50% 10%;
+  --border: 265 30% 85%;
+  --input: 265 30% 85%;
+  
+  /* Colors */
+  --primary: 271 81% 56%;  /* Purple */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 290 70% 60%; /* Violet */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 244 82% 60%; /* Indigo */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 158 64% 52%;
+  --success-foreground: 0 0% 100%;
+  --ring: 271 81% 56%;
+  --radius: 0.5rem;
+}
+
+/* Blue theme */
+.blue {
+  /* Base */
+  --background: 210 50% 98%;
+  --foreground: 215 50% 10%;
+  --muted: 205 30% 90%;
+  --muted-foreground: 215 40% 40%;
+  --popover: 210 50% 100%;
+  --popover-foreground: 215 50% 10%;
+  --card: 210 50% 100%;
+  --card-foreground: 215 50% 10%;
+  --border: 205 30% 85%;
+  --input: 205 30% 85%;
+  
+  /* Colors */
+  --primary: 215 80% 50%; /* Blue */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 200 70% 60%; /* Sky */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 225 70% 60%; /* Periwinkle */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 158 64% 52%;
+  --success-foreground: 0 0% 100%;
+  --ring: 215 80% 50%;
+  --radius: 0.5rem;
+}
+
+/* Green theme */
+.green {
+  /* Base */
+  --background: 150 50% 98%;
+  --foreground: 155 50% 10%;
+  --muted: 145 30% 90%;
+  --muted-foreground: 155 40% 40%;
+  --popover: 150 50% 100%;
+  --popover-foreground: 155 50% 10%;
+  --card: 150 50% 100%;
+  --card-foreground: 155 50% 10%;
+  --border: 145 30% 85%;
+  --input: 145 30% 85%;
+  
+  /* Colors */
+  --primary: 155 75% 40%; /* Green */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 170 70% 45%; /* Teal */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 135 70% 45%; /* Lime */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 158 64% 52%;
+  --success-foreground: 0 0% 100%;
+  --ring: 155 75% 40%;
+  --radius: 0.5rem;
+}
+
+/* Orange theme */
+.orange {
+  /* Base */
+  --background: 30 50% 98%;
+  --foreground: 35 50% 10%;
+  --muted: 25 30% 90%;
+  --muted-foreground: 35 40% 40%;
+  --popover: 30 50% 100%;
+  --popover-foreground: 35 50% 10%;
+  --card: 30 50% 100%;
+  --card-foreground: 35 50% 10%;
+  --border: 25 30% 85%;
+  --input: 25 30% 85%;
+  
+  /* Colors */
+  --primary: 25 95% 50%; /* Orange */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 45 100% 50%; /* Amber */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 15 80% 50%; /* Burnt Orange */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 158 64% 52%;
+  --success-foreground: 0 0% 100%;
+  --ring: 25 95% 50%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-source;
+  }
+}
+
+@layer components {
+  .card-hover {
+    @apply hover:shadow-lg transition-shadow duration-200;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-source {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
